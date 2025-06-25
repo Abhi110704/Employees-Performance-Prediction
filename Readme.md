@@ -74,7 +74,7 @@ Employee performance prediction is crucial for effective HR management, talent r
 - Users can input data and get instant predictions via the web app
 
 > **Screenshots:**
-> Add screenshots of your data, model training, feature importance plots, and the running web app here for a more visual README!
+> Check Screenshot and Video Folder for reference 
 
 ---
 
