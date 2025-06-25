@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prediction Result</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f8f9fa; margin: 0; padding: 0; }
+        .container { max-width: 500px; margin: 60px auto; background: #fff; padding: 40px; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); text-align: center; }
+        h2 { color: #007bff; }
+        .result { font-size: 2em; color: #28a745; margin: 30px 0; }
+        .nav { margin-top: 30px; }
+        .nav a { margin-right: 20px; color: #007bff; text-decoration: none; font-weight: bold; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Prediction Result</h2>
+        <div class="result">
+            Predicted Productivity: <strong>{{ prediction }}</strong>
+        </div>
+        <div class="nav">
+            <a href="{{ url_for('predict') }}">Predict Again</a>
+            <a href="{{ url_for('home') }}">Home</a>
+        </div>
+    </div>
+</body>
+</html>

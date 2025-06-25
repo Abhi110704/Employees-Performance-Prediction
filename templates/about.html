@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About - Employee Performance Prediction</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f8f9fa; margin: 0; padding: 0; }
+        .container { max-width: 700px; margin: 60px auto; background: #fff; padding: 40px; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        h1 { color: #007bff; }
+        h2 { color: #333; margin-top: 30px; }
+        p, ul { color: #333; }
+        .nav { margin-top: 30px; }
+        .nav a { margin-right: 20px; color: #007bff; text-decoration: none; font-weight: bold; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>About This Project</h1>
+        <p>This Employee Performance Prediction system uses machine learning to analyze various factors affecting employee productivity. The goal is to help HR and managers make data-driven decisions for talent management, resource allocation, and performance improvement.</p>
+        <h2>Objectives</h2>
+        <ul>
+            <li>Predict employee productivity using historical and current data</li>
+            <li>Identify key factors influencing performance</li>
+            <li>Provide actionable insights for HR and management</li>
+        </ul>
+        <h2>How to Use</h2>
+        <ul>
+            <li>Go to the <a href="{{ url_for('predict') }}">Predict</a> page</li>
+            <li>Enter the required employee and work details</li>
+            <li>Submit the form to get a productivity prediction</li>
+        </ul>
+        <div class="nav">
+            <a href="{{ url_for('home') }}">Home</a>
+            <a href="{{ url_for('predict') }}">Predict</a>
+        </div>
+    </div>
+</body>
+</html>
